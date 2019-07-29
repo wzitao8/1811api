@@ -59,8 +59,22 @@ Route::get('/cate/a', 'Caty\KeyController@a');
 
 
 Route::post('/logindo', 'Caty\IndexController@logindo');
+
+Route::post('/reg/login', 'Caty\CateController@reglogin');
 //资源控制器
 Route::resource('posts', 'PostController');
+
+
+
+Route::get('/user/login', 'LoginController@login');
+
+Route::get('/user/reg', 'LoginController@reg');
+
+Route::post('/user/logindo', 'LoginController@loginDo');
+
+Route::post('/loginsee', 'LoginController@loginsee');
+
+Route::post('/user/regdo', 'LoginController@regDo');
 
 
 // Route::resource('posts/{post}?id={$id}', 'PostController');/
