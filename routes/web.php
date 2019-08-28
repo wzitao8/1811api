@@ -74,8 +74,33 @@ Route::post('/user/logindo', 'LoginController@loginDo');
 
 Route::post('/loginsee', 'LoginController@loginsee');
 
-Route::post('/user/regdo', 'LoginController@regDo');
+Route::get('/user/regdo', 'LoginController@regDo');
 
+Route::get('/api/pad', 'Api\LoginController@pad');
+
+Route::post('/api/login', 'Api\LoginController@login');
+Route::post('/api/login', 'Api\LoginController@login');
+
+
+
+
+Route::get('/api/list', 'Api\UserController@list');
+
+Route::get('/api/listapi', 'Api\UserController@listapi');
+
+
+Route::post('/api/new', 'Api\UserController@new');
+Route::post('/api/res', 'Api\UserController@res');
+Route::post('/api/hot', 'Api\UserController@hot');
+Route::post('/api/data', 'Api\UserController@data');
+
+Route::post('/api/goodsname', 'Api\UserController@goodsname');
+Route::post('/api/goodscode', 'Api\UserController@goodscode');
+
+Route::post('/api/price', 'Api\UserController@price');
+
+
+Route::get('/api/test', 'Api\UserController@test');
 
 // Route::resource('posts/{post}?id={$id}', 'PostController');/
 
